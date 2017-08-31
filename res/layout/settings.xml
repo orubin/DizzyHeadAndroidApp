@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:paddingLeft="5px" android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/black">
+    <TextView android:text="Dizzy Head - Settings" android:gravity="center" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content"  android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:textColor="@color/blue" android:textSize="26px"></TextView>
+       
+    <TextView android:text="Name:"    android:paddingLeft="20px" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/fullname"    android:layout_below="@+id/textView1" android:textSize="24px" android:textColor="@color/blue" android:layout_marginTop="5px"></TextView>
+    <TextView android:text="E-mail:"    android:paddingLeft="20px" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/email"    android:layout_below="@+id/fullname" android:textSize="24px" android:textColor="@color/blue" android:layout_marginTop="2px"></TextView>
+    <TextView android:text="Age:"    android:paddingLeft="20px" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/age"    android:layout_below="@+id/email" android:textSize="24px" android:textColor="@color/blue" android:layout_marginTop="2px"></TextView>
+    <TextView android:text="Weight:" android:paddingLeft="20px" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/weight" android:layout_below="@+id/age"       android:textSize="24px" android:textColor="@color/blue" android:layout_marginTop="2px"></TextView>
+    <TextView android:text="Gender:" android:paddingLeft="20px" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/gender" android:textSize="24px" android:textColor="@color/blue" android:layout_below="@+id/weight" android:layout_marginTop="3dip"></TextView>
+    
+    <TextView android:text="Country:" android:paddingLeft="20px" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/country" android:layout_below="@+id/gender" android:textSize="24px" android:textColor="@color/blue" android:layout_marginTop="2dip"></TextView>
+    
+    <TextView android:text="Who suits you most?" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/who" android:layout_below="@+id/country" android:textColor="#FF3333" android:layout_centerHorizontal="true" android:textSize="26px" android:layout_marginTop="7dip"></TextView>
+    <ImageView android:layout_height="wrap_content" android:id="@+id/imageView1" android:layout_width="wrap_content" android:src="@drawable/a1" android:layout_below="@+id/who" android:clickable="true" android:onClick="a1" android:layout_marginTop="3dip" android:layout_marginLeft="30dip"></ImageView>
+    
+    <ImageView android:layout_height="wrap_content" android:id="@+id/imageView2" android:src="@drawable/a2" android:layout_toRightOf="@+id/imageView1" android:layout_alignTop="@+id/imageView1" android:layout_alignBottom="@+id/imageView1" android:onClick="a2" android:layout_width="wrap_content"></ImageView>
+  
+    <ImageView android:layout_width="wrap_content" android:src="@drawable/a4" android:onClick="a4" android:id="@+id/imageView4" android:layout_height="wrap_content" android:layout_marginTop="5px" android:layout_below="@+id/imageView1" android:layout_marginLeft="30dip"></ImageView>
+    <ImageView android:layout_width="wrap_content" android:src="@drawable/a5" android:onClick="a5" android:id="@+id/imageView5" android:layout_height="wrap_content" android:layout_toRightOf="@+id/imageView4" android:layout_below="@+id/imageView1" android:layout_marginLeft="10dip"></ImageView>
+    <ImageView android:id="@+id/imageView6" android:src="@drawable/a6" android:onClick="a6" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_toRightOf="@+id/imageView5" android:layout_below="@+id/imageView1" android:layout_marginLeft="10dip"></ImageView>
+
+    <ImageView android:layout_height="wrap_content" android:id="@+id/imageView3" android:layout_width="wrap_content" android:src="@drawable/a3" android:layout_toRightOf="@+id/imageView2" android:layout_alignTop="@+id/imageView2" android:layout_alignBottom="@+id/imageView2" android:layout_marginLeft="10px" android:clickable="true" android:onClick="a3"></ImageView>
+    <Button android:text="Select" android:id="@+id/selectcountry" android:layout_width="wrap_content" android:layout_alignBaseline="@id/country" android:onClick="SelectCountry" android:layout_toRightOf="@+id/country" android:layout_height="38dip" android:textSize="16dip"></Button>
+    <EditText android:id="@+id/editname" android:layout_width="150px"   android:textSize="12sp" android:layout_height="34px" android:layout_below="@+id/textView1" android:layout_marginTop="4dip" android:layout_toRightOf="@+id/country" ></EditText>
+    <EditText android:id="@+id/editemail" android:layout_width="150px"  android:textSize="12sp" android:layout_height="34px" android:layout_below="@+id/editname" android:layout_marginTop="1dip" android:layout_toRightOf="@+id/country" ></EditText>
+    <EditText android:id="@+id/editage" android:layout_width="120px" android:inputType="number" android:textSize="12sp" android:layout_height="34px" android:layout_below="@+id/editemail" android:layout_marginTop="1dip" android:layout_toRightOf="@+id/country" ></EditText>
+    <EditText android:id="@+id/editweight" android:layout_width="120px" android:textSize="12sp" android:numeric="decimal|signed" android:layout_below="@+id/editage" android:layout_toRightOf="@+id/country" android:layout_height="34dip" android:layout_marginTop="1dip"></EditText>
+	<RadioGroup
+	  android:layout_width="fill_parent"
+	  android:layout_height="wrap_content"
+	  android:orientation="horizontal"
+	  android:layout_below="@+id/editheight"
+	  android:paddingTop="3px" android:layout_marginTop="5px" android:layout_toRightOf="@+id/country" android:layout_alignBaseline="@id/weight">
+	    <RadioButton android:layout_below="@+id/editheight" android:id="@+id/m" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="M" android:layout_toRightOf="@+id/gender" android:onClick="M" android:textColor="@color/blue"></RadioButton>
+	    <RadioButton android:layout_below="@+id/editheight" android:id="@+id/f" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="F" android:layout_toRightOf="@+id/m" android:onClick="F" android:textColor="@color/blue"></RadioButton>
+    </RadioGroup>
+	<Button android:text="Save" android:id="@+id/button1" android:textStyle="bold" android:layout_alignParentBottom="true" android:layout_width="fill_parent" android:onClick="Save" android:gravity="center_horizontal" android:maxHeight="10px" android:height="20px" android:textScaleX="1" android:textSize="18px" android:layout_height="40px"></Button>
+    
+    </RelativeLayout>

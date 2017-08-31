@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.example.DizzyHead"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+<uses-permission android:name="android.permission.INTERNET" />
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar" android:screenOrientation="portrait">
+        <activity android:name=".DizzyHead" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Info" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Settings" android:screenOrientation="portrait"></activity>
+        <activity android:name="CountryList" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Log" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Points" android:screenOrientation="portrait"></activity>
+        <activity android:name=".About" android:screenOrientation="portrait"></activity>
+        <activity android:name=".FriendsOLD" android:screenOrientation="portrait"></activity>
+        <activity android:name=".FacebookPost" android:screenOrientation="portrait"></activity>
+        <activity android:name=".FriendsList" android:screenOrientation="portrait"></activity>
+        <activity android:name=".Share" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".Congrats" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name=".Beer" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"></activity>
+    </application>
+</manifest>

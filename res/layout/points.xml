@@ -1,0 +1,7 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@color/black">
+<TextView android:gravity="center" 			android:layout_width="wrap_content"  android:id="@+id/textView1" android:layout_height="wrap_content"  android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:textColor="@color/blue" android:textStyle="bold" android:textSize="25px" android:text="Points Distribution"></TextView>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@+id/textView1" android:layout_marginTop="10px" android:background="@color/black">
+    		<TableLayout android:id="@+id/my_table" android:layout_height="fill_parent" android:layout_width="fill_parent" android:stretchColumns="1" android:shrinkColumns="1" android:layout_marginTop="10px" android:background="@color/black"/>
+</ScrollView>
+</RelativeLayout>

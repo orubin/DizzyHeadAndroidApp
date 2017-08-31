@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="?android:attr/listPreferredItemHeight"
+	    android:focusable="true"
+	    android:focusableInTouchMode="false"
+	    android:clickable="true"
+	    android:background="@android:drawable/list_selector_background">
+	    <TextView android:id="@+id/cell_1" android:text="one" android:textSize="20px" android:layout_gravity="center_horizontal|center" android:layout_marginLeft="30px" android:textColor="@color/white"/>
+		<TextView android:id="@+id/cell_2" android:text="two" android:textSize="20px" android:layout_gravity="center_horizontal|center" android:layout_height="fill_parent" android:layout_marginRight="20px" android:textColor="@color/white"/>
+	</TableRow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" 
+              android:layout_height="fill_parent"
+              android:orientation="vertical" android:paddingLeft="5px"
+              android:background="@color/black">
+    <TextView android:text="Dizzy Head - Disclaimer" android:gravity="center" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_gravity="center_vertical|center_horizontal" android:textColor="@color/blue" android:textStyle="bold" android:textSize="28px"></TextView>
+    <TextView android:layout_marginTop="10px" android:textSize="19px" android:text="WARNING! - Our company accepts no liability for the content and information presented in this application, or for the consequences of any actions taken on the basis of the information provided." android:layout_width="wrap_content" android:id="@+id/textView2" android:layout_height="wrap_content" android:textColor="@color/blue"></TextView>
+    <TextView android:layout_marginTop="10px" android:textSize="19px" android:text="Information provided is subjective. Keep this in mind when using this application. 
+" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/blue"></TextView>
+    <TextView android:layout_marginTop="10px" android:textSize="19px" android:text="You are notified that disclosing, copying, distributing or taking any action in reliance on the contents of this application is strictly prohibited.
+" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/blue"></TextView>
+</LinearLayout>
