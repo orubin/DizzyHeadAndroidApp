@@ -17,7 +17,7 @@ public class FriendsList extends Activity {
 		ListView lv = (ListView) findViewById(R.id.listView1);
 		SparseBooleanArray a = lv.getCheckedItemPositions();
 		
-		int j=0;
+		int j = 0;
 		for (int i = 0; i < a.size(); i++)
         {
             if(a.valueAt(i) == true)
@@ -40,6 +40,7 @@ public class FriendsList extends Activity {
         this.setResult(RESULT_OK, i);
 		this.finish();
 	}
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		  super.onCreate(savedInstanceState);
