@@ -8,7 +8,7 @@ import android.view.View;
 
 public class Beer extends Activity {
 
-	@Override
+    @Override
     public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
         setContentView(R.layout.beer);
